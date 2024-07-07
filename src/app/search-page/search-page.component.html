@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="title">Repositories</div>
+    <div class="search-input">
+        <input type="text" [formControl]="searchText">
+    </div>
+</div>
+<div>
+    <div>{{(searchStatus | async)?.isLoading ? 'Loading...' : ''}}</div>
+
+    @for (repository of repositories | async; track repository.name) {
+        <app-repository-overview [repository]="repository">
+            {{ repository.name }}
+        </app-repository-overview>
+    }
+</div>

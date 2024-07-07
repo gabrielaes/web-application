@@ -1,0 +1,25 @@
+.repository-overview {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    width: 70%;
+}
+
+.repository-overview:hover  {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.repository-name, .repository-owner {
+    margin: 5px;
+    font-family: cursive;
+}
+
+.repository-name {
+    font-size: 30px;
+}
+
+.repository-owner {
+    font-size: 15px;
+}
